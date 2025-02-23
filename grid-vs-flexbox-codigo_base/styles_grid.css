@@ -7,7 +7,7 @@
 body {
 	background: #1D202B;
 	color: #fff;
-	font-family: 'arial', sans-serif;
+	font-family:Verdana, Tahoma, sans-serif;
 }
 
 .contenedor {
@@ -15,9 +15,14 @@ body {
 	max-width: 1200px;
 	margin: auto;
 	padding: 40px 0;
-	
-	/*flexbox*/
+
+/*flexbox
 	display: flex;
+	gap: 20px;*/
+
+	/*grid*/
+	display: grid;
+	grid-template-columns: 3fr 1fr;
 	gap: 20px;
 }
 
@@ -27,12 +32,16 @@ body {
 }
 
 .contenedor-conciertos {
-	/*flexbox*/
+	/*flexbox
 	width: 70%;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
+	gap: 20px;*/
 
+	/*grid*/
+	display: grid;
+	grid-template-columns:repeat(3, 1fr) ;
+	gap: 20px;
 }
 
 .card {
@@ -45,16 +54,25 @@ body {
 	background-size: cover;
 	background-position: center center;
 
-/*flexbox*/
-	width: calc(33.33% - 20px);
+/*flexbox
+	width: calc(33.33%-20px);*/
+
+	/*grid*/
 }
 
 .card .textos {
 	height: 100%;
-	/*flexbox*/
+	/*flexbox
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-between;*/
+
+	/*recomendado flexbox*/
+
+	/*grid*/
+	display: grid;
+	grid-template-rows: 1fr auto;
+	
 }
 
 .banner {
@@ -64,11 +82,19 @@ body {
 	background-size: cover;
 	background-position: center center;
 
-/*flexbox*/
-width: 30%;
+/*flexbox
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: space-between;*/
+
+	/*recomendado flexbox*/
+
+
+/*grid*/
+	display: grid;
+	grid-template-rows: auto auto auto;
+	align-items: center;
+
 }
 
 .banner ul {
