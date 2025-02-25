@@ -8,6 +8,7 @@ body {
 	background: #1D202B;
 	color: #fff;
 	font-family:Verdana, Tahoma, sans-serif;
+	height: 100dvh;
 }
 
 .contenedor {
@@ -15,7 +16,6 @@ body {
 	max-width: 1200px;
 	margin: auto;
 	padding: 40px 0;
-
 /*flexbox
 	display: flex;
 	gap: 20px;*/
@@ -53,7 +53,6 @@ body {
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
-
 /*flexbox
 	width: calc(33.33%-20px);*/
 
