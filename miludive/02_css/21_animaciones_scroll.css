@@ -29,8 +29,9 @@ body {
     z-index: -1;
     animation-name: pulse;
     animation-duration: 2s;
+    animation-delay: 1s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
 }
 
 @keyframes pulse{
@@ -39,7 +40,7 @@ body {
     }
     50% {
         opacity: 0.6;
-        scale: 2;
+        scale: 1.5;
     }
 }
 
