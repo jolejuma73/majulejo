@@ -8,9 +8,9 @@ body {
     overflow: hidden; /* Evita que aparezca una barra de desplazamiento horizontal */
 }
 
-.img {
+img {
     width: 80px;
-    animation: mover 3s linear infinite; /* Simplificación de la animación */
+    animation: mover 3s linear 5; /* Simplificación de la animación */
 }
 
 @keyframes mover {
@@ -18,6 +18,6 @@ body {
         transform: translateX(0);
     }
     to {
-        transform: translateX(100%); /* Mueve la imagen hasta el borde derecho */
+        transform: translateX(1000px); /* Mueve la imagen hasta el borde derecho */
     }
 }
