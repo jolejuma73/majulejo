@@ -10,14 +10,27 @@ body {
 
 img {
     width: 80px;
-    animation: mover 3s linear 5; /* Simplificación de la animación */
+animation: name duration timing-function delay iteration-count direction fill-mode;
+animation-name: mover;
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+animation-delay: 2s;
+animation-iteration-count: 3;
+animation-direction: alternate;
+animation-fill-mode: both;
 }
-
+img:hover {
+    animation-play-state: paused;
+    opacity: .7;
+    cursor: progress;
+}
 @keyframes mover {
     from {
         transform: translateX(0);
+        opacity: 0;
     }
     to {
         transform: translateX(1000px); /* Mueve la imagen hasta el borde derecho */
+        opacity: 1;
     }
 }
