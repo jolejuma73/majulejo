@@ -12,7 +12,7 @@ body {  margin: 0;
   height: 300px;
   justify-content: space-between;
   align-content: end;
-  align-items: start;
+  align-items: center;
 }
 
 .container div {
@@ -24,7 +24,7 @@ body {  margin: 0;
   background-color: #6644aa;
   border: 2px solid black;
   border-radius: 10px;
-    justify-self: end;
+    justify-self: center;
 
   }
 .container div:nth-child(2) {
