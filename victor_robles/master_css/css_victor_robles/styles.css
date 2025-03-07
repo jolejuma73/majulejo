@@ -1,0 +1,13 @@
+/*
+############SELECTORES#################
+*/
+
+/*Selector universal*/
+/*    *{} Con el asterisco se selecciona todo el contenido de la página*/
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Selector de etiqueta*/
+/* Selector de id*/
+/* Selector de clase*/
+/* Selector de atributo*/
