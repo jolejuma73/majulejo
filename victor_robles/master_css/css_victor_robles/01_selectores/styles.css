@@ -81,3 +81,16 @@ input[type="submit"] {
     border: 1px solid black;
     cursor:crosshair;
 }
+/* Selector de hijo*/
+#menu > li > a{
+    /*se modifican los elementos "a" que están dentro de un li que está seguido del identificador ul id="menu" */
+    color: rgb(243, 6, 6);
+}
+
+/* Prioridad  */
+#saludo h1 {
+    background-color: brown;
+}
+h1 {
+    background-color: rgb(8, 243, 28) !important;
+}
