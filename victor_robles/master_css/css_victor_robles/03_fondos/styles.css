@@ -2,13 +2,12 @@ body {
     background-color: #84e4e79a;
     background-image: url(../../imgenes_master/patron4.avif); /* de fondo la imagen que le pongamos*/
     background-repeat: repeat-x; /* Se repite la imagen de fondo en el eje-X  */
-
     background-repeat: repeat-x; /* Se repite la imagen de fondo en el eje-Y  */
-
     background-repeat: no-repeat; /* Evita que se repita, no te repite la imagen de fondo  */
     background-size: 100%;  /* hace que ocupe la imagen todo el ancho  */
     color: rgb(0, 0, 0);
     background-attachment: fixed; /* la imagen del fondo se queda fixed y se mueve todo el contenido */
+    background-position: left bottom; /*Posiciona la imagen a la izquierda y abajo */
 
 
 }
