@@ -66,6 +66,7 @@ body {
 }
 
 /* Calculamos el ángulo de rotación para cada box */
+.box:first-child {rotate: 0deg}
 .box:nth-child(2) {rotate: 9deg}
 .box:nth-child(3) {rotate: 18deg}
 .box:nth-child(4) {rotate: 27deg}
@@ -89,19 +90,20 @@ body {
 .box:nth-child(22) {rotate: 189deg}
 .box:nth-child(23) {rotate: 198deg}
 .box:nth-child(24) {rotate: 207deg}
-.box:nth-child(25) {rotate: 218deg}
-.box:nth-child(26) {rotate: 227deg}
-.box:nth-child(27) {rotate: 238deg}
-.box:nth-child(28) {rotate: 247deg}
-.box:nth-child(29) {rotate: 256deg}
-.box:nth-child(30) {rotate: 265deg}
-.box:nth-child(31) {rotate: 274deg}
-.box:nth-child(32) {rotate: 283deg}
-.box:nth-child(33) {rotate: 292deg}
-.box:nth-child(34) {rotate: 301deg}
-.box:nth-child(35) {rotate: 310deg}
-.box:nth-child(36) {rotate: 319deg}
-.box:nth-child(37) {rotate: 328deg}
-.box:nth-child(38) {rotate: 337deg}
-.box:nth-child(39) {rotate: 346deg}
-.box:nth-child(40) {rotate: 354deg}
+.box:nth-child(25) {rotate: 216deg}
+.box:nth-child(26) {rotate: 225deg}
+.box:nth-child(27) {rotate: 234deg}
+.box:nth-child(28) {rotate: 243deg}
+.box:nth-child(29) {rotate: 252deg}
+.box:nth-child(30) {rotate: 261deg}
+.box:nth-child(31) {rotate: 270deg}
+.box:nth-child(32) {rotate: 279deg}
+.box:nth-child(33) {rotate: 288deg}
+.box:nth-child(34) {rotate: 297deg}
+.box:nth-child(35) {rotate: 306deg}
+.box:nth-child(36) {rotate: 315deg}
+.box:nth-child(37) {rotate: 324deg}
+.box:nth-child(38) {rotate: 333deg}
+.box:nth-child(39) {rotate: 342deg}
+.box:nth-child(40) {rotate: 351deg}
+.box:nth-child(40) {rotate: 360deg}
