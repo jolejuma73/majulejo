@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.circle-container {
+    position: relative; /* Necesario para posicionar los boxes en relación a este contenedor */
+    width: 300px; /* Diámetro del círculo imaginario (2 * 100px) */
+    height: 300px;
+}
+/* Estilos para el círculo */
+.circle-container::before {
+    content: ""; /* Necesario para mostrar el pseudo-elemento */
+    position: absolute;
+    top: 65%;
+    left: 0px;
+    transform: translate(-50%, -50%); /* Centra el círculo */
+    width: 340px; /* Ajusta el tamaño del círculo */
+    height: 340px; /* Ajusta el tamaño del círculo */
+    border: 6px solid black; /* Borde negro */
+    border-radius: 50%; /* Hace que sea un círculo */
+    box-sizing: border-box; /* Incluye el borde en el tamaño */
+}
+/* Segundo círculo */
+.circle-container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* Ajusta el tamaño del segundo círculo */
+    height: 100px; /* Ajusta el tamaño del segundo círculo */
+    border: 2px solid red; /* Borde rojo (puedes cambiar el color) */
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.inner-circle {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border: 12px solid rgb(4, 27, 240);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.box {
+    position: absolute; /* Permite posicionar los boxes de forma absoluta */
+    width: 30px; /* Ajusta el ancho según tus necesidades */
+    height: 30px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transform-origin: 0 200px; /* Punto de rotación: 0px a la derecha y 100px hacia abajo */
+}
+
+.box p {
+    margin: 0;
+}
+
+/* Calculamos el ángulo de rotación para cada box */
+.box:nth-child(2) {rotate: 9deg}
+.box:nth-child(3) {rotate: 18deg}
+.box:nth-child(4) {rotate: 27deg}
+.box:nth-child(5) {rotate: 36deg}
+.box:nth-child(6) {rotate: 45deg}
+.box:nth-child(7) {rotate: 56deg}
+.box:nth-child(8) {rotate: 63deg}
+.box:nth-child(9) {rotate: 72deg}
+.box:nth-child(10) {rotate: 81deg}
+.box:nth-child(11) {rotate: 90deg}
+.box:nth-child(12) {rotate: 99deg}
+.box:nth-child(13) {rotate: 108deg}
+.box:nth-child(14) {rotate: 117deg}
+.box:nth-child(15) {rotate: 126deg}
+.box:nth-child(16) {rotate: 135deg}
+.box:nth-child(17) {rotate: 144deg}
+.box:nth-child(18) {rotate: 153deg}
+.box:nth-child(18) {rotate: 162deg}
+.box:nth-child(19) {rotate: 171deg}
+.box:nth-child(21) {rotate: 180deg}
+.box:nth-child(22) {rotate: 189deg}
+.box:nth-child(23) {rotate: 198deg}
+.box:nth-child(24) {rotate: 207deg}
+.box:nth-child(25) {rotate: 218deg}
+.box:nth-child(26) {rotate: 227deg}
+.box:nth-child(27) {rotate: 238deg}
+.box:nth-child(28) {rotate: 247deg}
+.box:nth-child(29) {rotate: 256deg}
+.box:nth-child(30) {rotate: 265deg}
+.box:nth-child(31) {rotate: 274deg}
+.box:nth-child(32) {rotate: 283deg}
+.box:nth-child(33) {rotate: 292deg}
+.box:nth-child(34) {rotate: 301deg}
+.box:nth-child(35) {rotate: 310deg}
+.box:nth-child(36) {rotate: 319deg}
+.box:nth-child(37) {rotate: 328deg}
+.box:nth-child(38) {rotate: 337deg}
+.box:nth-child(39) {rotate: 346deg}
+.box:nth-child(40) {rotate: 354deg}
