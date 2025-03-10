@@ -1,0 +1,101 @@
+/*
+Ejercicio Completo con html y css
+1. Crear un documeto html y vincularlo con css
+2. Crear una estructura html con un CONTENEDOR GENERAL, CABECERA, BARRA LATERAL, SECCIÓN DE CONTENIDO PRINCIPAL, ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL Y FOOTER.
+3. Todo el contenido debe estar dentro del contenedor general y su ancho será de 1200px y estar centrado.
+4. header debe ocupar el 100%y tener un texto grande centrado.
+5. Menú debe tener los elementos uno al lado del otro.
+6. El contenido principal debe tener un ancho del 70%.
+El contenido dentro del contenedor principal debe ser una cuadrícula de 4 lineas de 2 cajas.
+La barra lateral debe tener un ancho del 30%.
+El footer debe tener un ancho del 100% del div que lo contiene y estar abajo del todo.   */
+
+*  {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+#general {
+    max-width: 1200px;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #ccc;
+
+}
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(69, 170, 170);
+    border-bottom: 3px solid black;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 90px;
+}
+.clearfix {
+    float: none;
+    clear: both;
+}
+#menu {
+    background-color: rgb(223, 227, 231);
+}
+#menu ul li {
+    /*display: inline-block;*/
+    display: block;
+    float: left;
+    border-left: 1px solid #a3a0a0;
+}
+#menu ul li a {
+    display: block;
+    color: #444;
+    padding: 15px;
+
+}
+#menu ul li:hover {
+    background-color: rgba(69, 170, 170, 0.281);
+    cursor: pointer;
+}
+#menu ul li:hover a{
+    color: #fff;
+}
+
+#contenido {
+    float: left;
+    width: 70%;
+    background-color: rgb(189, 189, 192);
+}
+#contenido >h2 {
+    text-align: center;
+    color: blue;
+    padding: 15px;
+    border-bottom: 1px solid red;
+}
+
+.caja {
+    background-color: brown;
+    border: 5px solid greenyellow;
+    width: 40%;
+    height: 200px;
+    float: left;
+    margin: 20px;
+    margin-left: 45px;
+}
+#sidebar {
+    float: left;
+    width: 30%;
+    background-color: rgb(113, 226, 113);
+    min-height: 100vh;
+    text-align: center;
+}
+
+#footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 80px;
+    line-height: 60px;
+    font-size: 18px;
+}
